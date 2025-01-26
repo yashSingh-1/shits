@@ -1,101 +1,77 @@
-import Image from "next/image";
+import Link from "next/link"
+import Image from "next/image"
+import "./globals.css"
+import React from "react"
+import ProductCard from "@/components/ProductCard"
+
+const featuredProducts = [
+  { id: 1, name: "Premium Candle", price: 299.99, image: "https://images.pexels.com/photos/754062/pexels-photo-754062.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { id: 2, name: "Scented Candle", price: 199.99, image: "https://images.pexels.com/photos/754062/pexels-photo-754062.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { id: 3, name: "Rose Candle", price: 149.99, image: "https://images.pexels.com/photos/754062/pexels-photo-754062.jpeg?auto=compress&cs=tinysrgb&w=800" },
+]
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative h-[600px] flex items-center justify-center ">
+        <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
+          <source src="https://videos.pexels.com/video-files/3987640/3987640-hd_1920_1080_24fps.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative z-10 text-center font-mono ">
+          <h1 className="text-5xl font-bold mb-2 mx-10 bg-gradient-to-r
+           from-red-900 via-black to-blue-900 py-2 md:px-4 px-1 rounded-xl">Experience Scented Candles</h1>
+          <p className="text-xl mb-8 mx-5">Elevate your lifestyle with love of beautiful Candles</p>
+          <Link
+            href="/product"
+            className="bg-gradient-to-br border-2 from-blue-800 via-yellow-950 to-blue-950 hover:bg-blue-600 text-white font-mono py-3 px-8 rounded-xl transition-colors"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            Shop Now
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Featured Products Section */}
+      <section className="py-16 bg-gradient-to-tr from-red-950 via-yellow-950 to-violet-950 border-t-2 ">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-mono text-opacity-65 mb-8 text-center">Featured Products</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section id="about" className="py-16 bg-gradient-to-br border-t-2 from-red-950 via-yellow-950 to-violet-950">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-mono mb-8 text-center">About Us</h2>
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="md:w-1/2 mb-8 md:mb-0">
+              <Image
+                src="https://images.pexels.com/photos/278664/pexels-photo-278664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="About Luxe Tech"
+                width={500}
+                height={300}
+                className="rounded-xl shadow-lg"
+              />
+            </div>
+            <div className="md:w-1/2 md:pl-8 font-mono">
+              <p className="text-lg mb-4">
+                Get yourself a quality candle and upgrade your catalaogue
+                Enjoy your time in light with scents unmatched with a 
+                sensory adventure
+              </p>
+              <p className="text-lg">
+                From state-of-the-art audio equipment to sleek smart home devices, every product in our catalog is
+                handpicked for its exceptional quality, cutting-edge features, and stunning design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
