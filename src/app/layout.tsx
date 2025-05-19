@@ -1,12 +1,13 @@
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 import "./globals.css"
 import { Inter } from "next/font/google"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Luxe Tech - Premium E-commerce",
-  description: "Shop the latest in luxury tech products",
+  title: "Kadala - Premium Scented Candles",
+  description: "Experience the finest scented candles that elevate your space with unmatched fragrances",
 }
 
 export default function RootLayout({
@@ -16,9 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} bg-gray-900 text-gray-100`}>
+      <body className={`${inter.className} bg-gray-900 text-gray-100 min-h-screen flex flex-col`}>
         <Header />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   )

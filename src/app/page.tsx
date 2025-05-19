@@ -44,6 +44,10 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="w-full flex justify-center items-center p-4">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/A-mkoB7ubXw?si=NQpxsn5mQLcikVNr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
       {/* About Us Section */}
       <section id="about" className="py-16 bg-gradient-to-br border-t-2 from-red-950 via-yellow-950 to-violet-950">
         <div className="container mx-auto px-4">
