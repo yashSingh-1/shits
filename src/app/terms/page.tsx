@@ -6,7 +6,7 @@ export default function Terms() {
       <div className="max-w-4xl mx-auto space-y-8">
         <section>
           <p className="text-gray-300 mb-4">
-            Welcome to Kadala! These terms and conditions outline the rules and regulations for the use of Kadala's Website, located at kadala.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use Kadala if you do not agree to take all of the terms and conditions stated on this page.
+            Welcome to Kadala! These terms and conditions outline the rules and regulations for the use of Kadala&apos;s Website, located at kadala.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use Kadala if you do not agree to take all of the terms and conditions stated on this page.
           </p>
         </section>
 
@@ -45,17 +45,17 @@ export default function Terms() {
             You must not use this website to transmit or send unsolicited commercial communications.
           </p>
           <p className="text-gray-300">
-            You must not use this website for any purposes related to marketing without Kadala's express written consent.
+            You must not use this website for any purposes related to marketing without Kadala&apos;s express written consent.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">5. Restricted Access</h2>
           <p className="text-gray-300 mb-4">
-            Access to certain areas of this website is restricted. Kadala reserves the right to restrict access to areas of this website, or indeed this entire website, at Kadala's discretion.
+            Access to certain areas of this website is restricted. Kadala reserves the right to restrict access to areas of this website, or indeed this entire website, at Kadala&apos;s discretion.
           </p>
           <p className="text-gray-300">
-            If Kadala provides you with a user ID and password to enable you to access restricted areas of this website or other content or services, you must ensure that the user ID and password are kept confidential. Kadala may disable your user ID and password at Kadala's sole discretion without notice or explanation.
+            If Kadala provides you with a user ID and password to enable you to access restricted areas of this website or other content or services, you must ensure that the user ID and password are kept confidential. Kadala may disable your user ID and password at Kadala&apos;s sole discretion without notice or explanation.
           </p>
         </section>
       </div>

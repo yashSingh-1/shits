@@ -23,7 +23,7 @@ export default function CancellationPolicy() {
             <li>In case you feel that the product received is not as shown on the site or as per your expectations, you must bring it to the notice of our customer service within of receiving the product.</li>
             <li>The Customer Service Team after looking into your complaint will take an appropriate decision.</li>
             <li>In case of complaints regarding products that come with a warranty from manufacturers, please refer the issue to them.</li>
-            <li>In case of any Refunds approved by Kadala, it'll take for the refund to be processed to the end customer.</li>
+            <li>In case of any Refunds approved by Kadala, it&apos;ll take for the refund to be processed to the end customer.</li>
           </ul>
         </section>
       </div>

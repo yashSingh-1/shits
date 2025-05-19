@@ -45,7 +45,16 @@ export default function Home() {
       </section>
 
       <section className="w-full flex justify-center items-center p-4">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/A-mkoB7ubXw?si=NQpxsn5mQLcikVNr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/A-mkoB7ubXw?si=NQpxsn5mQLcikVNr" 
+          title="YouTube video player" 
+          frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerPolicy="strict-origin-when-cross-origin" 
+          allowFullScreen
+        ></iframe>
       </section>
 
       {/* About Us Section */}
