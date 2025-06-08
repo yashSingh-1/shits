@@ -5,9 +5,9 @@ import React from "react"
 import ProductCard from "@/components/ProductCard"
 
 const featuredProducts = [
-  { id: 1, name: "Premium Candle", price: 299.99, image: "https://images.pexels.com/photos/754062/pexels-photo-754062.jpeg?auto=compress&cs=tinysrgb&w=800" },
-  { id: 2, name: "Scented Candle", price: 199.99, image: "https://images.pexels.com/photos/754062/pexels-photo-754062.jpeg?auto=compress&cs=tinysrgb&w=800" },
-  { id: 3, name: "Rose Candle", price: 149.99, image: "https://images.pexels.com/photos/754062/pexels-photo-754062.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 999, image: "/products/image.png" },
+  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img2.png" },
+  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img.png" },
 ]
 
 export default function Home() {
@@ -64,8 +64,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <Image
-                src="https://images.pexels.com/photos/278664/pexels-photo-278664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="About Luxe Tech"
+                src="/products/img.png"
+                alt="About Kadala Fragrances"
                 width={500}
                 height={300}
                 className="rounded-xl shadow-lg"
@@ -73,13 +73,10 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 md:pl-8 font-mono">
               <p className="text-lg mb-4">
-                Get yourself a quality candle and upgrade your catalaogue
-                Enjoy your time in light with scents unmatched with a 
-                sensory adventure
+                Welcome to Kadala Fragrances, where we craft premium scented candles that transform your space into a sanctuary of serenity. Each candle is carefully handcrafted with the finest ingredients, creating an immersive sensory experience that elevates your daily moments.
               </p>
               <p className="text-lg">
-                From state-of-the-art audio equipment to sleek smart home devices, every product in our catalog is
-                handpicked for its exceptional quality, cutting-edge features, and stunning design.
+                Our Glaze Series collection features unique fragrances like Camphora's refreshing clarity, Lavandula's calming embrace, and Arabica's energizing warmth. Every candle is designed to not just illuminate your space, but to create an atmosphere that resonates with your mood and enhances your well-being.
               </p>
             </div>
           </div>

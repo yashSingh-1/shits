@@ -1,23 +1,18 @@
 "use client"
 
-
 import ProductCard from "@/components/ProductCard"
 import { useState } from "react"
 
-
 const products = [
-  { id: 1, name: "Premium Headphones", price: 299.99, image: "https://images.pexels.com/photos/278664/pexels-photo-278664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", category: "Audio" },
-  { id: 2, name: "Smart Watch", price: 199.99, image: "https://images.pexels.com/photos/278664/pexels-photo-278664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", category: "Wearables" },
-  { id: 3, name: "Wireless Earbuds", price: 149.99, image: "https://images.pexels.com/photos/278664/pexels-photo-278664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", category: "Audio" },
-  { id: 4, name: "Smart Home Hub", price: 129.99, image: "https://images.pexels.com/photos/278664/pexels-photo-278664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", category: "Smart Home" },
-  { id: 5, name: "Portable Speaker", price: 89.99, image: "https://images.pexels.com/photos/278664/pexels-photo-278664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", category: "Audio" },
-  { id: 6, name: "Fitness Tracker", price: 79.99, image: "https://images.pexels.com/photos/278664/pexels-photo-278664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", category: "Wearables" },
+  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 999, image: "/products/image.png", category: "Premium" },
+  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img2.png", category: "Scented" },
+  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img.png", category: "Rose" },
 ]
 
 export default function ProductsPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
-  const [priceRange, setPriceRange] = useState(300)
+  const [priceRange, setPriceRange] = useState(3000)
 
   const filteredProducts = products.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -57,14 +52,14 @@ export default function ProductsPage() {
                 onChange={(e) => setSelectedCategory(e.target.value)}
               >
                 <option value="All">All</option>
-                <option value="Audio">Audio</option>
-                <option value="Wearables">Wearables</option>
-                <option value="Smart Home">Smart Home</option>
+                <option value="Premium">Premium</option>
+                <option value="Scented">Scented</option>
+                <option value="Rose">Rose</option>
               </select>
             </div>
             <div className="mb-4">
               <label htmlFor="price" className="block mb-2">
-                Max Price: ${priceRange}
+                Max Price: ₹{priceRange}
               </label>
               <input
                 type="range"

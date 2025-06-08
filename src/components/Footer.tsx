@@ -54,23 +54,18 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: contact@kadala.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
-              <li>Address: 123 Candle Street, Aroma City</li>
+              <li>Email: kadalafragrances@gmail.com</li>
+              <li>Phone: 9358634884</li>
+              <li>Address: NIMS, Jaipur, Rajasthan</li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/kadalafragrances/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                 Instagram
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Facebook
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Twitter
-              </a>
+             
             </div>
           </div>
         </div>
