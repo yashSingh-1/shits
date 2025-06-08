@@ -21,12 +21,12 @@ export default function RootLayout({
       <Head>
         <meta property="og:title" content="Kadala - Premium Scented Candles" />
         <meta property="og:description" content="Experience the finest scented candles that elevate your space with unmatched fragrances" />
-        <meta property="og:image" content="/main.png" />
+        <meta property="og:image" content="https://kadala.store/main.png" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kadala - Premium Scented Candles" />
         <meta name="twitter:description" content="Experience the finest scented candles that elevate your space with unmatched fragrances" />
-        <meta name="twitter:image" content="/main.png" />
+        <meta name="twitter:image" content="https://kadala.store/main.png" />
       </Head>
       <body className={`${inter.className} bg-gray-900 text-gray-100 min-h-screen flex flex-col`}>
         <Header />
