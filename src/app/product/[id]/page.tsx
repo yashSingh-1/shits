@@ -109,8 +109,6 @@ interface ProductPageProps {
 export default function ProductPage({ params }: ProductPageProps) {
   const { id } = use(params);
   const product = products.find(p => p.id === parseInt(id)) || products[0];
-  const [selectedColor, setSelectedColor] = useState("Black")
-  const [selectedSize, setSelectedSize] = useState("Standard")
   const [activeTab, setActiveTab] = useState<"description" | "reviews" | "faq">("description")
 
   return (

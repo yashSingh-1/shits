@@ -76,7 +76,7 @@ export default function Home() {
                 Welcome to Kadala Fragrances, where we craft premium scented candles that transform your space into a sanctuary of serenity. Each candle is carefully handcrafted with the finest ingredients, creating an immersive sensory experience that elevates your daily moments.
               </p>
               <p className="text-lg">
-                Our Glaze Series collection features unique fragrances like Camphora's refreshing clarity, Lavandula's calming embrace, and Arabica's energizing warmth. Every candle is designed to not just illuminate your space, but to create an atmosphere that resonates with your mood and enhances your well-being.
+                Our Glaze Series collection features unique fragrances like Camphora&apos;s refreshing clarity, Lavandula&apos;s calming embrace, and Arabica&apos;s energizing warmth. Every candle is designed to not just illuminate your space, but to create an atmosphere that resonates with your mood and enhances your well-being.
               </p>
             </div>
           </div>
