@@ -1,13 +1,11 @@
 "use client"
 
-import { useRouter, useSearchParams } from "next/navigation"
+import { useSearchParams } from "next/navigation"
 import Image from "next/image"
 
 export default function CheckoutPage() {
-  const router = useRouter()
   const searchParams = useSearchParams()
   
-  const productId = searchParams.get('productId')
   const productName = searchParams.get('name')
   const productImage = searchParams.get('image')
   const productPrice = searchParams.get('price')
