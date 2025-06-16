@@ -56,7 +56,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>Email: kadalafragrances@gmail.com</li>
               <li>Phone: 9358634884</li>
-              <li>Address: NIMS, Jaipur, Rajasthan</li>
+              <li>Address: Ground floor, Kasra No: 635,636, gali no. 5, near tushar vatika, dungarpur, Rajasthan, 314001</li>
             </ul>
           </div>
           <div>
