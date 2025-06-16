@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
           <p className="text-gray-300 mb-4">You may choose to restrict the collection or use of your personal information in the following ways:</p>
           <ul className="list-disc pl-6 text-gray-300 space-y-2">
             <li>Whenever you are asked to fill in a form on the website, look for the box that you can click to indicate that you do not want the information to be used by anybody for direct marketing purposes</li>
-            <li>If you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time by writing to or emailing us at contact@kadala.com</li>
+            <li>If you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time by writing to or emailing us at contact@kadala.store</li>
           </ul>
           <p className="text-gray-300 mt-4">
             We will not sell, distribute or lease your personal information to third parties unless we have your permission or 

@@ -31,7 +31,7 @@ export default function ShippingPolicy() {
             Delivery of our services will be confirmed on your mail ID as specified during registration.
           </p>
           <p className="text-gray-300 mb-4">
-            For any issues in utilizing our services you may contact our helpdesk on or contact@kadala.com
+            For any issues in utilizing our services you may contact our helpdesk on or contact@kadala.store
           </p>
           <div className="mt-6 p-4 bg-gray-800 rounded-lg">
             <p className="text-gray-300 font-semibold">Delivery Time:</p>

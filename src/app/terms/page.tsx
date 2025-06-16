@@ -6,7 +6,7 @@ export default function Terms() {
       <div className="max-w-4xl mx-auto space-y-8">
         <section>
           <p className="text-gray-300 mb-4">
-            Welcome to Kadala! These terms and conditions outline the rules and regulations for the use of Kadala&apos;s Website, located at kadala.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use Kadala if you do not agree to take all of the terms and conditions stated on this page.
+            Welcome to Kadala! These terms and conditions outline the rules and regulations for the use of Kadala&apos;s Website, located at kadala.store. By accessing this website we assume you accept these terms and conditions. Do not continue to use Kadala if you do not agree to take all of the terms and conditions stated on this page.
           </p>
         </section>
 
