@@ -2,8 +2,11 @@
 
 import { useSearchParams } from "next/navigation"
 import Image from "next/image"
+import { Suspense } from "react"
 
-export default function CheckoutPage() {
+export const dynamic = 'force-dynamic'
+
+function CheckoutForm() {
   const searchParams = useSearchParams()
   
   const productName = searchParams.get('name')
@@ -149,5 +152,13 @@ export default function CheckoutPage() {
         </form>
       </div>
     </div>
+  )
+}
+
+export default function CheckoutPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <CheckoutForm />
+    </Suspense>
   )
 } 
