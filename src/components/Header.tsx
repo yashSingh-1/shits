@@ -19,7 +19,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="#contact" className="hover:text-blue-400 transition-colors">
+            <Link href="/contact" className="hover:text-blue-400 transition-colors">
               Contact
             </Link>
           </li>

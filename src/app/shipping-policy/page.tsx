@@ -16,6 +16,9 @@ export default function ShippingPolicy() {
             For domestic buyers, orders are shipped through registered domestic courier companies and /or speed post only.
           </p>
           <p className="text-gray-300 mb-4">
+            The products will be shipped within 3 days and delivered within 7 days.
+          </p>
+          <p className="text-gray-300 mb-4">
             Orders are shipped within or as per the delivery date agreed at the time of order confirmation and delivering of the shipment subject to Courier Company / post office norms.
           </p>
           <p className="text-gray-300 mb-4">
@@ -32,8 +35,8 @@ export default function ShippingPolicy() {
           </p>
           <div className="mt-6 p-4 bg-gray-800 rounded-lg">
             <p className="text-gray-300 font-semibold">Delivery Time:</p>
-            <p className="text-gray-300">Minimum Time: 5 Days</p>
-            <p className="text-gray-300">Maximum Time: 10 Days</p>
+            <p className="text-gray-300">Shipping Time: Within 3 days</p>
+            <p className="text-gray-300">Delivery Time: Within 7 days</p>
           </div>
         </section>
       </div>

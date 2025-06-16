@@ -4,15 +4,15 @@ import ProductCard from "@/components/ProductCard"
 import { useState } from "react"
 
 const products = [
-  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 999, image: "/products/image.png", category: "Premium" },
-  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img2.png", category: "Scented" },
-  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img.png", category: "Rose" },
+  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 1299, image: "/products/image.png", category: "Premium" },
+  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 1499, image: "/products/img2.png", category: "Scented" },
+  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 1399, image: "/products/img.png", category: "Rose" },
 ]
 
 export default function ProductsPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
-  const [priceRange, setPriceRange] = useState(3000)
+  const [priceRange, setPriceRange] = useState(999)
 
   const filteredProducts = products.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -64,8 +64,8 @@ export default function ProductsPage() {
               <input
                 type="range"
                 id="price"
-                min="0"
-                max="300"
+                min="500"
+                max="999"
                 step="10"
                 className="w-full"
                 value={priceRange}

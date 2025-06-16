@@ -13,6 +13,10 @@ export default function CancellationPolicy() {
             Kadala believes in helping its customers as far as possible, and has therefore a liberal cancellation policy. Under this policy:
           </p>
           <ul className="list-disc pl-6 text-gray-300 space-y-2 mt-4">
+            <li>You may return the product within 7-14 days, the item must be in the same condition and packaging.</li>
+            <li>The replacement delivery time frame will be 7 days.</li>
+            <li>The exchange delivery time frame will be 7 days.</li>
+            <li>If refund is approved, the amount will be credited within 7-14 days to the customer bank account.</li>
             <li>Cancellations will be considered only if the request is made immediately after placing the order.</li>
             <li>However, the cancellation request may not be entertained if the orders have been communicated to the vendors/merchants and they have initiated the process of shipping them.</li>
             <li>Kadala does not accept cancellation requests for perishable items like flowers, eatables etc.</li>
@@ -23,7 +27,6 @@ export default function CancellationPolicy() {
             <li>In case you feel that the product received is not as shown on the site or as per your expectations, you must bring it to the notice of our customer service within of receiving the product.</li>
             <li>The Customer Service Team after looking into your complaint will take an appropriate decision.</li>
             <li>In case of complaints regarding products that come with a warranty from manufacturers, please refer the issue to them.</li>
-            <li>In case of any Refunds approved by Kadala, it&apos;ll take for the refund to be processed to the end customer.</li>
           </ul>
         </section>
       </div>

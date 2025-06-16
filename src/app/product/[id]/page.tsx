@@ -7,7 +7,7 @@ const products = [
   { 
     id: 1, 
     name: "Camphora – Glaze Series by Kadala Fragrances", 
-    price: 999, 
+    price: 1299, 
     image: "/products/image.png", 
     category: "Premium",
     description: "Pure. Crisp. Restorative.",
@@ -39,7 +39,7 @@ const products = [
   { 
     id: 2, 
     name: "Lavandula – Glaze Series by Kadala Fragrances", 
-    price: 999, 
+    price: 1499, 
     image: "/products/img2.png", 
     category: "Scented",
     description: "Soft. Floral. Tranquil.",
@@ -71,7 +71,7 @@ const products = [
   { 
     id: 3, 
     name: "Arabica – Glaze Series by Kadala Fragrances", 
-    price: 999, 
+    price: 1399, 
     image: "/products/img.png", 
     category: "Rose",
     description: "Bold. Warm. Energizing.",
@@ -154,8 +154,8 @@ export default function ProductPage({ params }: ProductPageProps) {
           
 
           {/* Add to Cart Button */}
-          <button className="w-full bg-blue-600 hover:bg-blue-900 text-white font-bold py-3 px-4 rounded transition-colors">
-            Add to Cart
+          <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+            Buy Now
           </button>
         </div>
       </div>

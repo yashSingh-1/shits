@@ -5,9 +5,9 @@ import React from "react"
 import ProductCard from "@/components/ProductCard"
 
 const featuredProducts = [
-  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 999, image: "/products/image.png" },
-  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img2.png" },
-  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img.png" },
+  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 1299, image: "/products/image.png" },
+  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 1499, image: "/products/img2.png" },
+  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 1399, image: "/products/img.png" },
 ]
 
 export default function Home() {
@@ -44,18 +44,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full flex justify-center items-center p-4">
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/A-mkoB7ubXw?si=NQpxsn5mQLcikVNr" 
-          title="YouTube video player" 
-          frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerPolicy="strict-origin-when-cross-origin" 
-          allowFullScreen
-        ></iframe>
-      </section>
+      
 
       {/* About Us Section */}
       <section id="about" className="py-16 bg-gradient-to-br border-t-2 from-red-950 via-yellow-950 to-violet-950">
