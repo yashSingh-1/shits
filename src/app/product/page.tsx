@@ -4,9 +4,9 @@ import ProductCard from "@/components/ProductCard"
 import { useState } from "react"
 
 const products = [
-  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 1299, image: "/products/image.png", category: "Premium" },
-  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 1499, image: "/products/img2.png", category: "Scented" },
-  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 1399, image: "/products/img.png", category: "Rose" },
+  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 799, image: "/products/image.png", category: "Premium" },
+  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 899, image: "/products/img2.png", category: "Scented" },
+  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img.png", category: "Rose" },
 ]
 
 export default function ProductsPage() {

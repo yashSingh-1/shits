@@ -7,7 +7,7 @@ const products = [
   { 
     id: 1, 
     name: "Camphora – Glaze Series by Kadala Fragrances", 
-    price: 1299, 
+    price: 799, 
     image: "/products/image.png", 
     category: "Premium",
     description: "Pure. Crisp. Restorative.",
@@ -39,7 +39,7 @@ const products = [
   { 
     id: 2, 
     name: "Lavandula – Glaze Series by Kadala Fragrances", 
-    price: 1499, 
+    price: 899, 
     image: "/products/img2.png", 
     category: "Scented",
     description: "Soft. Floral. Tranquil.",
@@ -71,7 +71,7 @@ const products = [
   { 
     id: 3, 
     name: "Arabica – Glaze Series by Kadala Fragrances", 
-    price: 1399, 
+    price: 999, 
     image: "/products/img.png", 
     category: "Rose",
     description: "Bold. Warm. Energizing.",

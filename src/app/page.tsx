@@ -5,9 +5,9 @@ import React from "react"
 import ProductCard from "@/components/ProductCard"
 
 const featuredProducts = [
-  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 1299, image: "/products/image.png" },
-  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 1499, image: "/products/img2.png" },
-  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 1399, image: "/products/img.png" },
+  { id: 1, name: "Camphora – Glaze Series by Kadala Fragrances", price: 799, image: "/products/image.png" },
+  { id: 2, name: "Lavandula – Glaze Series by Kadala Fragrances", price: 899, image: "/products/img2.png" },
+  { id: 3, name: "Arabica – Glaze Series by Kadala Fragrances", price: 999, image: "/products/img.png" },
 ]
 
 export default function Home() {
