@@ -2,10 +2,11 @@
 
 import { use, useState } from "react"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 const products = [
   { 
-    id: 1, 
+  id: 1,
     name: "Camphora – Glaze Series by Kadala Fragrances", 
     price: 799, 
     image: "/products/image.png", 
@@ -108,8 +109,13 @@ interface ProductPageProps {
 
 export default function ProductPage({ params }: ProductPageProps) {
   const { id } = use(params);
+  const router = useRouter();
   const product = products.find(p => p.id === parseInt(id)) || products[0];
   const [activeTab, setActiveTab] = useState<"description" | "reviews" | "faq">("description")
+
+  const handleBuyNow = () => {
+    router.push(`/checkout?productId=${product.id}&name=${encodeURIComponent(product.name)}&image=${encodeURIComponent(product.image)}&price=${product.price}`)
+  }
 
   return (
     <div className="container font-mono px-4 md:m-auto py-8 bg-gradient-to-r from-slate-900 via-yellow-950 to-black text-white">
@@ -132,7 +138,7 @@ export default function ProductPage({ params }: ProductPageProps) {
           <p className="text-2xl text-blue-400 mb-4">₹{product.price.toFixed(2)}</p>
           <p className="text-xl italic mb-4">{product.description}</p>
           <p className="mb-6 whitespace-pre-line">{product.longDescription}</p>
-          
+
           <div className="mb-6">
             <h3 className="font-semibold mb-2">Fragrance Profile:</h3>
             <p className="text-lg">{product.fragranceProfile}</p>
@@ -154,7 +160,10 @@ export default function ProductPage({ params }: ProductPageProps) {
           
 
           {/* Add to Cart Button */}
-          <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <button 
+            onClick={handleBuyNow}
+            className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
             Buy Now
           </button>
         </div>
@@ -200,7 +209,7 @@ export default function ProductPage({ params }: ProductPageProps) {
             <div className="space-y-6">
               <div className="flex items-center gap-4 mb-6">
                 <div className="text-4xl font-bold">{product.reviews.rating}</div>
-                <div>
+            <div>
                   <div className="flex text-yellow-400">
                     {"★".repeat(5)}
                   </div>
