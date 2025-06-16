@@ -6,7 +6,7 @@ export default function Contact() {
           Get in Touch
         </h1>
         <p className="text-gray-400 text-center mb-12 text-lg">
-          Have questions about our products or need assistance? We're here to help!
+          Have questions about our products or need assistance? We&apos;re here to help!
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
